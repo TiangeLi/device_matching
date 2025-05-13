@@ -211,7 +211,7 @@ elif st.session_state.view_mode == 'rating':
 
 elif st.session_state.view_mode == 'range_completed':
     st.title("Rating Task Completed")
-    st.success(f"Great job! Your ratings for ID range {st.session_state.id_start}-{st.session_state.id_end} have been saved.")
+    st.success(f"Your ratings for ID range {st.session_state.id_start}-{st.session_state.id_end} have been saved.")
     st.download_button(
         label="Download Rated Rows (CSV)",
         data=generate_rated_csv(),
